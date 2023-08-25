@@ -38,6 +38,9 @@ function hallticket(Input) {
     data.push(Input);
     let student = document.getElementById("student");
     student.classList.remove("student");
+    setTimeout(()=>{
+      student.classList.add('student');
+     },5000); 
   } else {
     notifyEmailexist();
   }
@@ -65,6 +68,4 @@ examCenter = () => {
 
   hallticket(user);
   console.log(data);
-  
-
 };
